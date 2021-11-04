@@ -25,7 +25,7 @@
             <li>Улучшает качество спермы и подвижность сперматозоидов</li>
             <li>Является средством профилактики рака простаты</li>
         </ul>
-        <a href="#">Заказать</a>
+        <a href="#orderForm">Заказать</a>
     </div>
 
     <div class="promo-image">
@@ -39,7 +39,7 @@
     <div class="product-image">
 
         <img src="img/prod.png" alt="Преимущества выбора средства для повышения потенции LevelUp">
-        <a href="#">Заказать</a>
+        <a href="#orderForm">Заказать</a>
 
         <div class="features-left">
             <div>
@@ -108,10 +108,6 @@
             </div>
         </div>
 
-        
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
     <div class="swiper-pagination"></div>
 
     </div>
@@ -127,7 +123,7 @@
         <div>
             <p>Средство для потенции LevelUp, разработанное специалистами компании MediCo, доказало свою эффективность и широко используется в борьбе против эректильной дисфункции.
             Также препарат назначается в качестве превентивного средства, если существует риск развития рака предстательной железы, пениса и яичек.</p>
-            <a href="#">Заказать</a>
+            <a href="#orderForm">Заказать</a>
             <span>Существуют противопоказания, необходима консультация специалиста.</span>
         </div>
     </div>
@@ -144,12 +140,31 @@
     </div>
 </section>
 
-
+<section id="orderForm" class="order">
+    <h2>Успейте заказать LevelUp по выгодной цене</h2>
+    <div class="order-info">
+        <div id="countdown"></div>
+        <span>6 370</span>
+        <span>8 990</span>
+    </div>
+    <div class="order-form">
+        <form action="#">
+            <label for="username"> Имя
+                <input type="text" id="username" name="username" placeholder="Ваше имя" required>
+            </label>
+            <label for="telephone"> Телефон
+                <input type="tel" id="telephone" name="telephone" placeholder="Номер телефона" required>
+            </label>
+            <input type="submit" value="Заказать">
+        </form>
+    </div>
+</section>
 
 <footer></footer>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>
