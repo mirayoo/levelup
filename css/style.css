@@ -70,6 +70,7 @@ a {
   z-index: -1;
   filter: brightness(0.5);
   background-color:rgb(13 5 55 / 100%);
+  border: 0;
 }
 
 .promo-content {
