@@ -2,7 +2,7 @@
 
 var swiper = new Swiper(".reviewSwiper", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 48,
     speed: 600,
     loop: true,
     autoplay: {
