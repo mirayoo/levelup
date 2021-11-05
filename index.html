@@ -10,13 +10,61 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
     <title>LevelUp | Эффективное средство для повышения потенции</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 
 <body>
 
-<header></header>
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="#mainpage"><img src="img/logo.png" alt="Логотип компании LevelUp"></a>
+            </div>
+            <div class="navbar">
+                <div class="toggle-container">
+                    <div class="navToggle">
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <div id="mobile-menu">
+                        <ul>
+                            <li><a href="#mainpage">Главная</a></li>
+                            <li><a href="#productFeatures">Состав</a></li>
+                            <li><a href="#reviews">Отзывы</a></li>
+                            <li><a href="#advantages">Преимущества</a></li>
+                            <li><a href="#orderForm">Заказать</a></li>
+                        </ul>
+                        <div class="socials-mobile">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="#"><i class="far fa-envelope"></i></a>
+                            <a href="#"><i class="fas fa-headset"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-<section class="promo">
+                <ul>
+                    <li><a href="#mainpage">Главная</a></li>
+                    <li><a href="#productFeatures">Состав</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#advantages">Преимущества</a></li>
+                    <li><a href="#orderForm">Заказать</a></li>
+                </ul>
+            </div>
+            
+            <div class="socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#"><i class="far fa-envelope"></i></a>
+                <a href="#"><i class="fas fa-headset"></i></a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section id="mainpage" class="promo">
     
         <iframe src="https://www.youtube.com/embed/RhlQvbvMg-0?controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&modestbranding=1"></iframe>
     
@@ -41,7 +89,7 @@
 
 </section>
 
-<section class="product-features">
+<section id="productFeatures" class="product-features">
     
     <div class="container">
         <h2>Состав таблеток для потенции LevelUp</h2>
@@ -91,7 +139,7 @@
     </div>
 </section>
 
-<section class="reviews">
+<section id="reviews" class="reviews">
     <div class="container">
         <h2>Отзывы клиентов</h2>
 
@@ -134,7 +182,7 @@
     </div>
 </section>
 
-<section class="second-promo">
+<section id="advantages" class="second-promo">
     <h2 class="container">Действенное средство в борьбе с импотенцией</h2>
     <div class="firstPromoBlock container">
         <div>
@@ -161,36 +209,83 @@
 </section>
 
 <section id="orderForm" class="order">
-    <h2 class="container">Успейте заказать LevelUp по выгодной цене</h2>
     <div class="container">
+        <h2>Успейте заказать <span>LevelUp</span> по выгодной цене!</h2>
+        
+        <div class="order-main">
+            <div class="order-info">
+                <h3>До конца акции осталось:</h3>
+                <div id="countdown"></div>
+                <div class="price">
+                    <span class="discount">6 370</span>
+                    <span>8 990₽</span>
+                </div>
+            </div>
 
-        <div class="order-info">
-            <div id="countdown"></div>
-            <span>6 370</span>
-            <span>8 990</span>
-        </div>
-
-        <div class="order-form">
-            <form action="#">
-                <label for="username"> Имя
-                    <input type="text" id="username" name="username" placeholder="Ваше имя" required>
-                </label>
-                <label for="telephone"> Телефон
-                    <input type="tel" id="telephone" name="telephone" placeholder="Номер телефона" required>
-                </label>
-                <input type="submit" value="Заказать">
-            </form>
-        </div>
-
+            <div class="order-form">
+                <h3>Оставьте заявку:</h3>
+                <form action="#">
+                    <div class="form-name">
+                        <input type="text" id="username" name="username" placeholder="Ваше имя" required>
+                        <label for="username"> Имя</label>
+                    </div>
+                    <div class="form-tel">
+                        <input type="tel" id="telephone" name="telephone" placeholder="Номер телефона" required>
+                        <label class="phone" for="telephone"> Телефон</label>
+                    </div>
+                    <input type="submit" value="Заказать">
+                </form>
+            </div>
+        </div> 
     </div>
 </section>
 
-<footer></footer>
+<footer>
+    <div class="container footer">
 
+        <div class="footer-col-1">
+            <img src="img/logo.png" alt="Логотип LevelUp">
+            <h4>LevelUp - средство от импотенции</h4>
+            <p>Наша компания работает в этой сфере уже достаточно давно. 
+            За это время мы помогли уже миллионам мужчин, поможем и вам! 
+            Препарат прошел все необходимые исследования и доказал свою 
+            эффективность на практике. На связи 24/7, быстрая доставка в 
+            любую точку мира.
+            </p>
+        </div>
+
+        <div class="footer-col-2">
+            <h4>Меню</h4>
+            <nav>
+                <ul>
+                    <li><a href="#mainpage">Главная</a></li>
+                    <li><a href="#productFeatures">Состав</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#advantages">Преимущества</a></li>
+                    <li><a href="#orderForm">Заказать</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-col-3">
+            <h4>Как с нами связаться</h4>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#"><i class="far fa-envelope"></i></a>
+                <a href="#"><i class="fas fa-headset"></i></a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<button type="button" id="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="js/jquery.countdown.min.js"></script>
-<script src="plugins/youtube-background/jquery.youtube-background.js"></script>
 <script src="js/main.js"></script>
 
 </body>

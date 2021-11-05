@@ -1,8 +1,40 @@
+//HEADER
+
+$(".navToggle").on("click", function(){
+  $(this).toggleClass("open");
+$("#mobile-menu").toggleClass("active");
+})
+
+//SCROLL TO TOP
+
+let mybutton = document.getElementById("back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 //INPUT SLIDER
 
 var swiper = new Swiper(".reviewSwiper", {
-    slidesPerView: 3,
-    spaceBetween: 48,
+    slidesPerView: 1,
+    spaceBetween: 30,
     speed: 600,
     loop: true,
     autoplay: {
@@ -13,6 +45,16 @@ var swiper = new Swiper(".reviewSwiper", {
       el: ".swiper-pagination",
       clickable: true,
     },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      931: {
+        slidesPerView: 3,
+        spaceBetween: 48,
+      }
+    }
   });
 
 //INPUT FILTER

@@ -1,0 +1,295 @@
+@media screen and (min-width: 768px) {
+    .toggle-container {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    section.promo {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    section.promo {
+        height: 100vh;
+    }
+    .secondPromoBlock {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .secondPromoBlock span {
+        font-size: 1.2rem;
+    }
+    .order-form {
+        backdrop-filter: none;
+    }
+    div#countdown {
+        font-size: 6rem;
+    }
+    div#countdown:after {
+        box-shadow: inset 0 -75px 0 0px rgb(0 0 0 / 20%);
+    }
+    .order-info span.discount {
+        font-size: 2.8rem;
+
+    }
+    .order-info span:not(.discount) {
+        font-size: 1.8rem;
+    }
+    .footer-col-2 ul {
+        padding-left: 120px;
+    }
+    
+}
+
+@media screen and (max-width: 1034px) {
+    .features-left img, .features-right img {
+        max-width: 50px;
+    }
+    .firstPromoBlock div:last-child {
+        padding-top: 0;
+    }
+    header .navbar > ul li {
+        letter-spacing: 0px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .product-features .product-section {
+        flex-direction: column;
+    }
+    .features-left, .features-right, .product-image {
+        width: 100%;
+    }
+    .product-image {
+        order: 1;
+        margin-bottom: 60px;
+    }
+    .features-left {
+        order: 2;
+    }
+    .features-right {
+        order: 3;
+    }
+    .product-features:before {
+        top: 17%;
+        left: 35%;
+        height: 30vh;
+        width: 30vw;
+    }
+    .firstPromoBlock div:last-child {
+        padding-left: 20px;
+    }
+    .secondPromoBlock span {
+        font-size: .8rem;
+    }
+    .order-form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 882px) {
+    header .socials {
+        font-size: 1rem;
+    }
+    header .socials i {
+        padding-right: 12px;
+    }
+    .footer-col-2 ul {
+        padding-left: 90px;
+    }
+}
+
+@media screen and (max-width: 802px) {
+    section.promo {
+        box-sizing: content-box;
+        background: linear-gradient(
+            164deg, rgba(37,15,101,1) 0%, 
+            rgba(97,49,181,1) 50%,
+            rgba(37,15,101,1) 100%);
+        padding: 80px 0 60px 0;
+    }
+    section.promo ul li {
+        font-size: 1.1rem;
+    }
+
+    section.promo ul li:before {
+        font-size: 30px;
+    }
+    .firstPromoBlock {
+        margin-bottom: 24px;
+    }
+    .footer-col-1 img {
+        float: none;
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        position: relative;
+    }
+    header .navbar > ul, header .socials {
+        display: none!important;
+    }
+    section.promo {
+        padding: 0;
+    }
+    section.promo h1 {
+        font-size: 2.2rem;
+    }
+    .promo-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .promo-content ul {
+        padding-right: 5%;
+        padding-left: 5%;
+        text-align: left;
+    }
+    .promo-content a {
+        margin-left: 0;
+    }
+    .promo-image, .promo-features {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .promo-image {
+        text-align: center;
+    }
+    .promo-image img {
+        max-width: 160px;
+    }
+    .product-image img {
+        max-width: 160px;
+    }
+    .product-features .container {
+        margin: 0;
+    }
+    .firstPromoBlock {
+        flex-direction: column;
+    }
+    .firstPromoBlock > div {
+        width: 100%;
+    }
+    .firstPromoBlock > div:first-child {
+        text-align: center;
+    }
+    .firstPromoBlock div:last-child {
+        text-align: center;
+    }
+    .firstPromoBlock:before {
+        top: 0;
+        left: 20px;
+        width: 50%;
+        height: 50%;
+    }
+    .secondPromoBlock {
+        display: flex;
+        align-items: flex-start;
+        font-size: 1.4rem;
+        width: fit-content;
+        box-sizing: border-box;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .secondPromoBlock div {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .secondPromoBlock i {
+        font-size: 1.4rem;
+        opacity: 1;
+        box-shadow: none;
+        color: rgb(234 178 0 / 100%);
+        background: rgb(0 0 0 / 0%);
+    }
+    .secondPromoBlock span {
+        margin-left: 8px;
+    }
+    .order-main {
+        flex-direction: column;
+    }
+    .order-info, .order-form {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    section#orderForm {
+        height: auto;
+        padding-top: 80px;
+        padding-bottom: 120px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer-col-1, .footer-col-2, .footer-col-3 {
+        width: 100%;
+    }
+    .footer-col-2 ul {
+        padding-left: 0;
+        text-align: center;
+    }
+    .footer > div:not(:first-child) {
+        padding-left: 0;
+    }
+    .footer > div {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .footer-col-2 {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 598px) {
+
+    h2 {
+        font-size: 1.5rem;
+    }
+    .order h2 span {
+        font-size: 1.7rem;
+    }
+    section.promo ul li {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    
+    section.promo h1 {
+        font-size: 1.2rem;
+    }
+    .firstPromoBlock:before {
+        height: 30%;
+    }
+    .order-form label, .order-form input[type=text], .order-form input[type=tel] {
+        width: auto;
+    }
+    .order-form {
+        width: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .order h3 {
+        font-size: 1.5rem;
+    }
+    .features-left, .features-right {
+        font-size: .8rem;
+    }
+    .product-features .product-section {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 348px) {
+    .secondPromoBlock {
+        max-width: min-content;
+    }
+    .product-image a {
+        padding: 20px 60px;
+    }
+}
