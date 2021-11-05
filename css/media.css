@@ -131,11 +131,8 @@
 }
 
 @media screen and (max-width: 767px) {
-    header {
-        position: relative;
-    }
     section.promo {
-        padding: 60px 0 60px 0;
+        padding: 120px 0 60px 0;
     }
     header .navbar > ul, header .socials {
         display: none!important;
@@ -245,7 +242,7 @@
     .footer-col-2 {
         margin-top: 32px;
     }
-    .nav-top {
+    .nav-up {
         top: -60px;
     }
     header .logo img {
