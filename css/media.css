@@ -111,7 +111,7 @@
             164deg, rgba(37,15,101,1) 0%, 
             rgba(97,49,181,1) 50%,
             rgba(37,15,101,1) 100%);
-        padding: 80px 0 60px 0;
+        padding: 120px 0 60px 0;
         height: auto;
     }
     section.promo ul li {
@@ -133,6 +133,9 @@
 @media screen and (max-width: 767px) {
     header {
         position: relative;
+    }
+    section.promo {
+        padding: 60px 0 60px 0;
     }
     header .navbar > ul, header .socials {
         display: none!important;
@@ -242,6 +245,12 @@
     .footer-col-2 {
         margin-top: 32px;
     }
+    .nav-top {
+        top: -60px;
+    }
+    header .logo img {
+        max-height: 50px;
+    }
 }
 
 @media screen and (max-width: 598px) {
@@ -255,11 +264,17 @@
     section.promo ul li {
         font-size: 1rem;
     }
+    .product-features:before {
+        top: 15%;
+        left: 22%;
+        height: 23vh;
+        width: 56vw;
+    }
 }
 @media screen and (max-width: 500px) {
     
     section.promo h1 {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     .firstPromoBlock:before {
         height: 30%;
@@ -281,13 +296,15 @@
     .product-features .product-section {
         padding: 0;
     }
-    section.promo {
-        padding-top: 140px;
-        padding-bottom: 160px;
-    }
     section.promo ul li {
         font-size: .8rem;
     }
+}
+
+@media screen and (max-width: 464px) {
+    section.promo h1 {
+        font-size: 1.3rem;
+    }    
 }
 
 @media screen and (max-width: 348px) {
